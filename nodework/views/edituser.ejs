@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit user <%= usdata.username %></h1>
+
+    <form action="/updateUser" method="post">
+
+        <input type="text" value="<%= usdata.username %>" name="username">
+        <input type="text" value="<%= usdata.email %>" name="email">
+        <input type="text" value="<%= usdata.phone %>" name="phone">
+        <input type="text" value="<%= usdata.gender%>" name="gender" placeholder="gender">
+        <input type="text" value="<%= usdata.DOB %>" name="DOB" placeholder="DOB">
+        <input type="text" value="<%= usdata.area %>" name="area" placeholder="area">
+        <input type="text" value="<%= usdata.city %>" name="city" placeholder="city">
+        <input type="text" value="<%= usdata.state %>" name="state" placeholder="state">
+        <input type="text" value="<%= usdata.pic %>" name="pic" placeholder="pic">
+        <input type="hidden" name="uid" value="<%= usdata._id %>">
+        <input type="text" value="<%= usdata.password %>" name="password">
+
+        <input type="submit" >
+    </form>
+</body>
+</html>
